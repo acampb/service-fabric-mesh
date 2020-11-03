@@ -72,7 +72,7 @@
               "codePackages": [
                 {
                   "name": "helloWorldCode",
-                  "image": "seabreeze/azure-mesh-helloworld:1.1-alpine",
+                  "image": "acampbell1327/demo-nginx:tagname",
                   "endpoints": [
                     {
                       "name": "helloWorldListener",
@@ -88,7 +88,7 @@
                 },
                 {
                   "name": "helloWorldSideCar",
-                  "image": "seabreeze/azure-mesh-helloworld-sidecar:1.0-alpine",
+                  "image": "acampbell1327/demo-nginx:tagname",
                   "resources": {
                     "requests": {
                       "cpu": "1",
