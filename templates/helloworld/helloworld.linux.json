@@ -1,5 +1,5 @@
 {
-  "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "location": {
@@ -76,13 +76,13 @@
                   "endpoints": [
                     {
                       "name": "helloWorldListener",
-                      "port": "80"
+                      "port": 80
                     }
                   ],
                   "resources": {
                     "requests": {
-                      "cpu": "1",
-                      "memoryInGB": "1"
+                      "cpu": 1,
+                      "memoryInGB": 1
                     }
                   }
                 },
@@ -91,8 +91,8 @@
                   "image": "acampbell1327/demo-nginx:tagname",
                   "resources": {
                     "requests": {
-                      "cpu": "1",
-                      "memoryInGB": "1"
+                      "cpu": 1,
+                      "memoryInGB": 1
                     }
                   }
                 }
